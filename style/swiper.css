@@ -1,0 +1,50 @@
+@charset "utf-8"
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #ffffff;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 1200px;
+  height: 600px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #747474;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 페이지네이션 스타일 */
+.sw-banner .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  transition: all 1s;
+}
+.sw-banner .swiper-pagination-bullet-active {
+  width: 48px;
+  border-radius: 8px;
+  background-color: #fffb00;
+}
