@@ -144,7 +144,7 @@ body {
   text-align: center;
   width: 100%;
 }
-.header .gnb .nav > ul > li {
+.header .gnb .nav > ul > .gnblist {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -156,6 +156,19 @@ body {
   transition: all 0.3s;
   position: relative;
 }
+/* .head .gnb .nav > ul > .gnblist::hover {
+  content: "";
+  display: block;
+  width:100%;
+  height: 2px;
+  background: #c40f39;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  opacity: 0;
+} */
+
 
 .container {
   width: 100%;
