@@ -190,9 +190,9 @@ body {
   margin: 0 0 0 120px;
   display: block;
   content: "";
-  width: 80px;
-  height: 1px;
-  background: #fff;
+  /* width: 80px; */
+  /* height: 1px; */
+  /* background: #fff; */
   margin: 157px 0 10px 0;
 }
 .textarea p {
