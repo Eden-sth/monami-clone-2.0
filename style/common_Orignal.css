@@ -271,6 +271,18 @@ caption {
   width: 100%;
   /* //240612(e) */
 }
+.head .gnb .nav > ul:hover::before{
+  visibility: visible;
+  opacity: 1;
+}
+.head .gnb .nav >ul:hover > li >ul{
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  display: inline-block;
+}
+
+
 .head .gnb .nav > ul > li {
   position: relative;
   display: inline-block;
@@ -284,11 +296,8 @@ caption {
   font-size: 17px;
   color: #303030;
   transition: all 0.3s;
-  /* 240612(s) */
-  position: relative;
-  /* //240612(e) */
 }
-/* 240612(s) */
+
 .head .gnb .nav > ul > li::after {
   content: "";
   display: block;
@@ -334,7 +343,7 @@ caption {
 
 /* 240612(s) */
 /* 개별 서브네비 */
-/* .head .gnb .nav>ul>li>ul{
+.head .gnb .nav>ul>li>ul{
 	display:none;
 	position:absolute;left:-78px;top:100%;z-index:100;
 	width:180px;
@@ -346,14 +355,14 @@ caption {
 .head .gnb .nav>ul>li:nth-child(4)>ul{left:-55px;}
 .head .gnb .nav>ul>li:nth-child(5)>ul{left:-83px;}
 .head .gnb .nav>ul>li:nth-child(6)>ul{left:-63px;}
-.head .gnb .nav>ul>li>ul>li{border-bottom:1px solid #e1e1e1;}
+.head .gnb .nav>ul>li>ul>li{border-bottom:1px solid #6c1010;}
 .head .gnb .nav>ul>li>ul>li:last-child{border-bottom:0;}
-.head .gnb .nav>ul>li>ul>li>a{
+.head .gnb .nav>ul>li>ul>li:hover>a{
 	display:block;
 	height:49px;line-height:49px;
 	font-size:14px;color:#6e6e6e;transition:all 0.3s;
 }
-.head .gnb .nav>ul>li>ul>li>a:hover{color:#c40f39;transition:all 0.3s;} */
+/* .head .gnb .nav>ul>li>ul>li>a:hover{color:#c40f39;transition:all 0.3s;} */
 
 #header {
   position: fixed;
@@ -380,14 +389,17 @@ caption {
   border-top: 1px solid #e8e8e8;
 }
 #header .head .gnb .nav > ul > li > ul {
-  position: absolute;
-  right: 0;
-  left: 0;
-  padding-top: 10px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* left: 0; */
+  /* padding-top: 10px; */
   visibility: hidden;
   opacity: 0;
+  transition: all 0.3s;
 }
-#header.on .head .gnb .nav > ul::before {
+/* 전체 배경 박스 기본 숨김 */
+
+#header.on .head .gnb .nav > ul::after {
   visibility: visible;
   opacity: 1;
 }
@@ -395,7 +407,7 @@ caption {
   visibility: visible;
   opacity: 1;
 }
-header .head .gnb .nav > ul > li > ul {
+#header .head .gnb .nav > ul > li > ul {
   position: absolute;
   right: 0;
   left: 0;

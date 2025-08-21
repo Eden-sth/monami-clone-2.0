@@ -156,7 +156,8 @@ body {
   transition: all 0.3s;
   position: relative;
 }
-/* .head .gnb .nav > ul > .gnblist::hover {
+/* 8.21 작업중~~ */
+/* .head .gnb .nav > ul > li:hover {
   content: "";
   display: block;
   width:100%;
@@ -168,6 +169,10 @@ body {
   transform: translateX(-50%);
   opacity: 0;
 } */
+
+.head .nav >ul > li:hover >a {
+  color: #c40f39;
+}
 
 
 .container {
